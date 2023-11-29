@@ -5,6 +5,16 @@
     .fieldError {
         border-color: #bd2130;
     }
+     div{
+         margin:20px 0 20px 0;
+     }
+    div>label{
+        margin-bottom:10px;
+        font-size: 20px;
+    }
+    div.footer{
+        margin-top: 50px;
+    }
 </style>
 <body>
 <div class="container">
@@ -35,7 +45,7 @@ fieldError' : 'form-control'">
             <input type="text" th:field="*{zipcode}" class="form-control"
                    placeholder="우편번호를 입력하세요">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-lg btn-primary" style="float:right">등록</button>
     </form>
     <br/>
     <div th:replace="fragments/footer :: footer" />

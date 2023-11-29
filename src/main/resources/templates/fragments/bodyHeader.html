@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<div class="header" th:fragment="bodyHeader">
-    <ul class="nav nav-pills pull-right">
-        <li><a href="/">Home</a></li>
-    </ul>
-    <a href="/"><h3 class="text-muted">HELLO SHOP</h3></a>
+<head>
+
+</head>
+<body>
+
+
+<div class="header" th:fragment="bodyHeader" style="display: flex; justify-content: space-between;">
+    <div style="margin-left: 40%;">
+        <a href="/"><img style="width: 13em; height: auto; display: block; margin: 0 auto;" src="/css/logo.png" ></a>
+    </div>
+    <br>
+    <div style="font-size: 0.8em; margin: 10% 0 5px 0 ">
+        <a class="btn btn-primary" style="font-size: 0.6em" href="/members/new">로그인</a>
+        <a href="/mypage"><img style="width: 2em; height: 2em; margin-left: 10px;" src="/css/mypage_icon.png" ></a>
+        <a href="/cart"><img style="width: 2em; height: 2em; margin-left: 10px;" src="/css/cart_icon.png" ></a>
+    </div>
 </div>
